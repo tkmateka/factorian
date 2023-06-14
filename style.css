@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* colors */
+.light-grey-bg, .menu li:hover {
+    background-color: #f2f5f9;
+}
+.light-black-bg {
+    color: #FFF;
+    background-color: #222222;
+}
+.dark-black-bg {
+    color: #FFF;
+    background-color: #1d1d1d;
+}
+.yellow {
+    color: #f7bc3b;
+}
+.yellow-bg {
+    background-color: #f7bc3b;
+}
+
+/* Fonts */
+.font-12 {
+    font-size: 12px;
+}
+
+/* Height */
+.full-height {
+    height: 100%;
+}
+.height-30px {
+    height: 30px;
+}
+.height-80px {
+    height: 80px;
+}
+
+/* Gap */
+.gap-1em {
+    gap: 1em;
+}
+
+/* Main styles */
+.main-container {   
+}
+.row-center {
+    display: flex; /* flex-direction default is row */
+    justify-content: center; /* This will align items to the center horizonatally if flex-direction is row */
+    align-items: center; /* This will align items to the center vertically if flex-direction is row */
+}
+.row-spacebetween-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.width-75-percent {
+    width: 75%;
+}
+.logo {
+    font-weight: 700;
+    border: 3px solid #1d1d1d;
+    padding: 10px;
+}
+.menu {
+    list-style: none; /* This removes the bullet points */
+    display: flex;
+    margin: 0;
+}
+.menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 90px;
+    cursor: pointer;
+}
+ 
