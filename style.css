@@ -6,7 +6,7 @@ body {
 }
 /* colors */
 .light-grey-bg, .menu li:hover {
-    background-color: #f2f5f9;
+    background-color: #bfcbda;
 }
 .light-black-bg {
     color: #FFF;
@@ -15,6 +15,9 @@ body {
 .dark-black-bg {
     color: #FFF;
     background-color: #1d1d1d;
+}
+.white {
+    color: #ffffff;
 }
 .yellow {
     color: #f7bc3b;
@@ -52,13 +55,28 @@ body {
     justify-content: center; /* This will align items to the center horizonatally if flex-direction is row */
     align-items: center; /* This will align items to the center vertically if flex-direction is row */
 }
+.row-end {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+}
+.row-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
 .row-spacebetween-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.width-50-percent {
+    width: 50%;
+}
 .width-75-percent {
     width: 75%;
+}
+.width-90-percent {
+    width: 90%;
 }
 .logo {
     font-weight: 700;
@@ -78,3 +96,74 @@ body {
     cursor: pointer;
 }
  
+/* Carousel */
+.no-flip {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.carousel-container {
+    position: relative;
+    height: 460px;
+}
+.carousel-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-image: url('./images/engineer.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:#5d5dc2;
+    background-blend-mode: multiply;
+}
+.carousel-title {
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 1;
+}
+.left-btn, .right-btn {
+    color: white;
+    padding: 5px 12px;
+    border: 2px white solid;
+    border-radius: 6px;
+}
+.left-btn:hover, .right-btn:hover {
+    border: none;
+    background: #f7bc3b;
+    cursor: pointer;
+}
+.yellow-btn {
+    border: none;
+    height: 40px;
+    background-color: #f7bc3b;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+
+/* Services */
+.service {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.service img, .service-image img {
+    width: 100%;
+}
+.service-image {
+    width: 30%;
+}
+.service-content {
+    width: 65%;
+}
+.service-content h3, .service-content p, .no-margin {
+    margin: 0 !important;
+}
+.padding-top-bottom-100px {
+    padding: 100px 0;
+}
